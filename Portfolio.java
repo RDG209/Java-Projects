@@ -94,7 +94,7 @@ public class Portfolio {
           Stock stockItem = (Stock) current;
 
           if (month%3 == 0) {
-            double priceChangePercent = randy.nextInt(-5, 101)/10;
+            double priceChangePercent = randy.nextInt(-50, 101)/10;
             double dividendPercent = randy.nextInt(0, 51)/10;
             stockItem.calcStockTotalInvestmentValue(priceChangePercent, dividendPercent);
           } 
