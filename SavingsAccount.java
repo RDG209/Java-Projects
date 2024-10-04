@@ -1,4 +1,3 @@
-
 public class SavingsAccount extends BankAccount {
   private double annualInterestRatePercent;
   private double monthlyRate;
@@ -44,6 +43,6 @@ public class SavingsAccount extends BankAccount {
     setInvestVal(getInvestVal() + monthInterest); // "Whcih adds the interest for this MONTH to the investment Value"
   }
   public String toString() {
-    return (super.toString() + "\nCurrent value: " + getInvestVal() + " Interest Earned: " + totalInterestEarned);
+    return String.format("%s\nCurrent value: %.2f Interest Earned: %.2f", super.toString(), getInvestVal(), totalInterestEarned);
   }
 }

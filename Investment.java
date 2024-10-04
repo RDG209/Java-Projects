@@ -20,7 +20,7 @@ public abstract class Investment {
     return type;
   }
   public void setName(String newName) {
-    type = newName;
+    name = newName;
   }
   public String getName() {
     return name;
@@ -33,7 +33,7 @@ public abstract class Investment {
   }
 
   public String toString() {
-    return ("Investment: " + type + " Name: " + name);
+    return ("Investment: " + getType() + " Name: " + getName());
   }
   
 }

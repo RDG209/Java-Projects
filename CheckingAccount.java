@@ -70,6 +70,6 @@ public class CheckingAccount extends BankAccount {
     }
   }
   public String toString() {
-    return (super.toString() + "\nCurrent value: " + getInvestVal() + " Interest Earned: " + totalInterestEarned + " Check Charges: " + totalCheckCharges);
+    return String.format("%s\nMinimum for Free Checking: %.2f Check Charge: %.2f\nCurrent value: %.2f Interest Earned: %.2f Check Charges: %.2f",super.toString(), minimumCheckFreeBalance, checkCharge, getInvestVal(), totalInterestEarned, totalCheckCharges);
   }
 }

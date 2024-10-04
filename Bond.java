@@ -11,10 +11,12 @@ public class Bond extends Investment {
     super();
   }
   public Bond(String name, double bondPrice, int numBonds, double annualPercent) {
-    super("Bond", "Bond");
+    super("Bond", name);
     setPPB(bondPrice);
     setNumBonds(numBonds);
     setAnnualReturnPercentage(annualPercent);
+
+    setInvestVal(getPPB() * getNumBonds());
   }
   public void setPPB(double bond) {
     pricePerBond = bond;
@@ -40,6 +42,6 @@ public class Bond extends Investment {
     setInvestVal(pricePerBond*numBondsOwned + cashEarnedToDate);
   }
   public String toString() {
-    return (super.toString() + "\nPrice per Bond: " + pricePerBond + " Number of Bonds: " + numBondsOwned);
+    return String.format("%s\nPrice per Bond: %.2f Number of Bonds: %d\nCurrent Value: %.2f Cash on Hand to Date: %.2f",super.toString(), pricePerBond, numBondsOwned, getInvestVal(), cashEarnedToDate);
   }
 }

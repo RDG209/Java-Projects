@@ -12,7 +12,7 @@ public class Stock extends Investment {
     setPPS(PPS);
     setNumShares(numShares);
 
-    double totalVal = pricePerShare * numSharesOwned;
+    double totalVal = getPPS() * getNumShares();
     setInvestVal(totalVal);
     
   }
@@ -50,7 +50,7 @@ public class Stock extends Investment {
   }
 
   public String toString() {
-    return (super.toString() + "\nPrice per Share: " + pricePerShare + " Num of Shares: " + numSharesOwned);
+    return String.format("%s\nPrice per Share: %.2f Num of Shares: %.2f\nCurrent Value: %.2f Investment Earnings to date: %.2f", super.toString(), pricePerShare, numSharesOwned, getInvestVal(), dividendsEarnedToDate);
   }
   
 }
