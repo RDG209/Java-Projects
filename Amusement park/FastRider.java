@@ -12,7 +12,7 @@ public class FastRider extends Rider implements TicketPrice {
     setTotalGate();
   }
 
-  public double getTotalGate() {
+  public static double getTotalGate() {
     return totalGate;
   }
   public void setTotalGate() {
