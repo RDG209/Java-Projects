@@ -12,10 +12,10 @@ public class Main {
 
     // overload and type conversion
     printNumber(42);
-    printNumber(3.14);
+    printNumber(3.14159);
 
     // Type conversion: int - double
-    int num = 10;
+    int num = 42;
     double converted = (double) num;
     System.out.println("Converted int to double: " + converted);
 
