@@ -2,4 +2,4 @@
 
 // These are great examples of simple Object Oriented Programming Examples from both course work and smaller interest projects
 
-// Foldered groups are meant as complete assignments 
+// Foldered groups are meant as complete assignments, A# files often have more than one program
